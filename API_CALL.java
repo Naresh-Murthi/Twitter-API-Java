@@ -25,7 +25,7 @@ import twitter4j.conf.ConfigurationBuilder;
 
 /**
  *
- * @author java1
+ * @author Naresh Murthi
  */
 public class API_CALL {
 
@@ -112,7 +112,7 @@ public class API_CALL {
                                 }
                                 System.out.println(score);
                                 
-                                
+                               //Store data to mysql 
                                 
                                 String myStatement = "insert into tweets(getId, getUser, getName, getText, getFavoriteCount, getRetweetCount, getCreatedAt,hashtag,tfidf) values (?,?,?,?,?,?,?,?,?)";
                                 PreparedStatement statement = con.prepareStatement(myStatement);
